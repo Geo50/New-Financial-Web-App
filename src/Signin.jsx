@@ -1,0 +1,36 @@
+import { useEffect } from "react";
+import s from "./Signin.module.css";
+import greyImg from "./assets/pictures/Signin/Currency.jpg";
+
+const Signin = () => {
+  useEffect(() => {
+    document.body.style.backgroundImage = `url(${greyImg})`;
+    document.body.style.backgroundSize = "cover";
+    return () => {
+      document.body.style.backgroundImage = "";
+      document.body.style.backgroundSize = "";
+    };
+  }, []);
+
+  return (
+    <div className={s.form_grand_container}>
+      <div className={s.form_container}>
+        <form className={s.form}>
+          <div className={s.form_group}>
+            <label>Username</label>
+            <input type="text" required></input>
+          </div>
+          <div className={s.form_group}>
+            <label>Password</label>
+            <input type="password" id={s.text} required></input>
+          </div>
+          <button className={s.form_submit_btn} type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Signin;
