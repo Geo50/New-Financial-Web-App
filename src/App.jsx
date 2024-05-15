@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar.jsx";
-import Home from "./Home.jsx";
-import Register from "./Register.jsx";
-import Signin from "./Signin.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Home from "./components/Home/Home.jsx";
+import Register from "./components/Register/Register.jsx";
+import Signin from "./components/Sign-in/Signin.jsx";
 
 function App() {
   return (

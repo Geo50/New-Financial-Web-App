@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import s from "./Signin.module.css";
-import greyImg from "./assets/pictures/Signin/Currency.jpg";
+import greyImg from "../../assets/pictures/Signin/Currency.jpg";
 
 const Signin = () => {
   useEffect(() => {

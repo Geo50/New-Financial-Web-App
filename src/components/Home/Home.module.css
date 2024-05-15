@@ -1,0 +1,13 @@
+.left_side {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.first_element {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list_element {
+  list-style-type: none;
+}

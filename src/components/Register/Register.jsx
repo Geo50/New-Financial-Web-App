@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import s from "./Register.module.css";
-import greyImg from "./assets/pictures/Register/grey.jpg";
+import greyImg from "../../assets/pictures/Register/grey.jpg";
 import { Link } from "react-router-dom";
 
 const Register = () => {
@@ -16,8 +16,8 @@ const Register = () => {
   }, []);
 
   return (
-    <div className={displayNone}>
-      <div className={s.flex}>
+    <div className={s.flex}>
+      <div className={displayNone}>
         <section className={s.form}>
           <p className={s.title}>Register</p>
           <p className={s.message} id={s.message_margin}>
@@ -25,24 +25,34 @@ const Register = () => {
           </p>
           <div className={s.flex}>
             <label>
-              <input className={s.input} type="text" placeholder="" />
+              <input className={s.input} type="text" placeholder="" required />
               <span>Firstname</span>
             </label>
             <label>
-              <input className={s.input} type="text" placeholder="" />
+              <input className={s.input} type="text" placeholder="" required />
               <span>Lastname</span>
             </label>
           </div>
           <label>
-            <input className={s.input} type="email" placeholder="" />
+            <input className={s.input} type="email" placeholder="" required />
             <span>Email</span>
           </label>
           <label>
-            <input className={s.input} type="password" placeholder="" />
+            <input
+              className={s.input}
+              type="password"
+              placeholder=""
+              required
+            />
             <span>Password</span>
           </label>
           <label>
-            <input className={s.input} type="password" placeholder="" />
+            <input
+              className={s.input}
+              type="password"
+              placeholder=""
+              required
+            />
             <span>Confirm password</span>
           </label>
           <button className={s.submit} onClick={changeState}>
@@ -54,7 +64,6 @@ const Register = () => {
           </p>
         </section>
       </div>
-      <button onClick={changeState}>test</button>
     </div>
   );
 };
