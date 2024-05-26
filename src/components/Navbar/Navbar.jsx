@@ -10,23 +10,23 @@ const Navbar = () => {
         <Link to="/home">
           <img src={DarkLogo} alt="site logo" className={s.nav_img}></img>
         </Link>
-      </div>
-      <div className={s.right_section}>
-        <Link to="/home" className={s.linkHeader}>
-          <p className={s.link}>Home</p>
-        </Link>
-        <Link to="/register" className={s.linkHeader}>
-          <p className={s.link}>Register</p>
-        </Link>
-        <Link to="/signin" className={s.linkHeader}>
-          <p className={s.link}>Sign-in</p>
-        </Link>
-        <Link to="/nav" className={s.linkHeader}>
-          <p className={s.link}>News</p>
-        </Link>
-        <Link to="/nav" className={s.linkHeader}>
-          <p className={s.link}>Profile</p>
-        </Link>
+        <div className={s.right_section}>
+          <Link to="/home" className={s.linkHeader}>
+            <p className={s.link}>Home</p>
+          </Link>
+          <Link to="/register" className={s.linkHeader}>
+            <p className={s.link}>Register</p>
+          </Link>
+          <Link to="/signin" className={s.linkHeader}>
+            <p className={s.link}>Sign-in</p>
+          </Link>
+          <Link to="/news" className={s.linkHeader}>
+            <p className={s.link}>News</p>
+          </Link>
+          <Link to="/nav" className={s.linkHeader}>
+            <p className={s.link}>Profile</p>
+          </Link>
+        </div>
       </div>
     </nav>
   );

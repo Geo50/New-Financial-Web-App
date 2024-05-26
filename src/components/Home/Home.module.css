@@ -37,3 +37,15 @@
   text-decoration: none;
   font-size: 30px;
 }
+
+@media (max-width: 400px) {
+  .home_img {
+    margin-left: 40px;
+    max-width: 100%;
+    height: auto;
+  }
+  .left_side,
+  .home_link {
+    font-size: 10px;
+  }
+}

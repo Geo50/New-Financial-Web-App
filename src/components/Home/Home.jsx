@@ -8,6 +8,8 @@ const Home = () => {
     document.body.style.backgroundColor = "whtie";
     document.body.style.padding = "0px";
     document.body.style.fontFamily = "Roboto Condensed";
+    // document.body.style.backgroundImage =
+    //   'linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.9)), url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg")';
 
     return () => {
       document.body.style.backgroundColor = "";
