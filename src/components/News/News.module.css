@@ -51,6 +51,12 @@ a:hover {
   cursor: pointer;
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 600px) {
   .news_image {
     max-width: 300px;
